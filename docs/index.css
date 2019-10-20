@@ -1,0 +1,87 @@
+* {
+	box-sizing: border-box;
+	border: 0;
+	padding: 0;
+	margin: 0;
+}
+
+html,
+body {
+	width: 100%;
+	height: 100%;
+	font-size: 20px;
+	
+}
+
+body{
+	font-family: 'Roboto', sans-serif;
+}
+
+main {
+	flex-grow: 1;
+}
+
+header,
+main,
+footer {
+	flex-shrink: 0;
+}
+
+.submit {
+	width: 5em;
+	height: 3em;
+}
+
+.page-container {
+	min-height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: stretch;
+	justify-content: center;
+	text-align: center;
+}
+
+.header-container {
+	font-family: 'Press Start 2P', cursive;
+}
+
+.start-container {
+}
+
+.quiz-container {
+}
+
+.answers {
+	display: block;
+}
+
+.score-container {
+}
+
+.results-container {
+}
+
+.contact-container {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-self: center;
+	align-self: center;
+}
+
+.test2 {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	margin: 0px 20px 0px 20px;
+	list-style: none;
+}
+
+.contact-info {
+	height: 30px;
+	width: 30px;
+	margin: 0px 40px 0px 40px;
+}
+
+@media only screen and (min-width: 540px) {}
+
+@media only screen and (min-width: 769px) {}
