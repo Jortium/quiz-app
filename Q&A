@@ -1,14 +1,16 @@
-const STORE = [
-      {
-            question: `Who is the Sage of Shadows in Ocarina of Time?`;
-            choices: [ `Princess Zelda`, `Saria`, `Darunia`, `Impa`];
-            answer: `Impa`;
-      };
-      {
-            question:`What is the fairies name that follows the Hero in Majora’s Mask?`;
-            choices: [`Tatl`, `Termina`, `Twinmold`, `Tael`];
-            answer: `Tatl`;
-      };
+
+Who is the Sage of Shadows in Ocarina of Time?
+Princess Zelda
+Saria
+Darunia
+Impa
+A: Impa
+ What is the fairies name that follows the Hero in Majora’s Mask?
+Tatl
+Termina
+Twinmold
+Tael
+A: Tatl
  What is the first Zelda game that the Hero was an adult the whole game?
 Breath of the Wild
 Ocarina of Time
