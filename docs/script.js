@@ -95,6 +95,8 @@ function generateHearts() {
             for (i = 1; i <= hearts; i++) {
                   $('.heartcontainer').append(`<img class='full' src="images/full.png">`);
             }
+      }
+}
 
 function updateHearts() {
       hearts--;
