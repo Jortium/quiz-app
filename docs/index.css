@@ -3,12 +3,17 @@
 	border: 0;
 	padding: 0;
 	margin: 0;
+<<<<<<< HEAD
+=======
+	cursor: url('images/cursor.gif'), auto;
+>>>>>>> first-draft
 }
 
 html,
 body {
 	width: 100%;
 	height: 100%;
+<<<<<<< HEAD
 	font-size: 20px;
 
 }
@@ -17,6 +22,17 @@ body {
 	min-width: 360px;
 	font-family: 'Roboto', sans-serif;
 
+=======
+}
+
+body {
+	font-size: 20px;
+	font-family: 'Roboto', sans-serif;
+	font-variant: small-caps;
+	background-color: #5A8C58;
+	color: #F2C46D;
+	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+>>>>>>> first-draft
 }
 
 main {
@@ -29,11 +45,19 @@ footer {
 	flex-shrink: 0;
 }
 
+<<<<<<< HEAD
 .page-container {
 	min-height: 100%;
 	display: flex;
 	flex-direction: column;
 	align-items: stretch;
+=======
+.pagecontainer {
+	min-height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+>>>>>>> first-draft
 	justify-content: center;
 	text-align: center;
 }
@@ -44,6 +68,7 @@ main{
 	flex-direction: column;
 }
 
+<<<<<<< HEAD
 .border-test{
 	margin: 0px 5px 0px 5px;
 	border: medium;
@@ -98,8 +123,110 @@ main{
 	margin: 5px 0px 5px 0px;
 }
 
+=======
+.border{
+	margin: 10px 5px 10px 5px;
+	border: medium;
+	border-style: solid;
+	border-color: black;
+	background-color:#D9D3B4;
+}
+
+.background-image{
+	background-image: url("images/shield.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+}
+
+.headercontainer {
+	font-family: 'Press Start 2P', cursive;
+	font-size: 10px;
+	margin: 5px 10px 10px 10px;
+}
+
+.heartcontainer{
+	min-height: 35px;
+}
+
+.empty,
+.full{
+	margin: 7px 0px 0px 0px;
+	height:20px;
+}
+
+#quizcontainer{
+	display: flex;	
+	justify-content: center;
+	align-items: center;
+	flex-flow: column;
+	min-width: 300px;
+	min-height: 300px;
+}
+
+.choices
+{
+	display: block;
+}
+
+.centercontainer{
+	display: flex;
+	justify-content:center;
+	flex-direction: row;
+	margin: 10px 0px 10px 0px;
+}
+
+.contactcontainer{
+	display: flex;
+	max-width: 500px;
+	flex-flow: row wrap;
+	justify-content: center;
+	align-content: center;
+	list-style: none;
+}
+
+.contactinfo {
+	height: 30px;
+	width: 30px;
+	margin: 0px 25px 0px 25px;
+}
+
+.press{	
+	font-family: 'Roboto', sans-serif;
+	font-variant: small-caps;
+	font-size: 20px;
+	width: 4em;
+	height: 2em;
+	border: 3px;
+	border-style: outset;	
+	color: #F2C46D;
+	background-color:#E8591A;
+	margin: 5px 0px 5px 0px;
+}
+
+.press:active{
+	border: 3px;
+	border-style: inset;
+}
+
+.press:hover {	
+	background-color:#BD4715;
+}
+
+>>>>>>> first-draft
 @media only screen and (min-width: 540px) {}
 
 @media only screen and (min-width: 769px) {
 
+<<<<<<< HEAD
+=======
+	main{
+		display: flex;
+		justify-content:center;
+		flex-direction: column;
+		min-width: 770px;
+		min-height: 770px;
+	}
+
+>>>>>>> first-draft
 }
