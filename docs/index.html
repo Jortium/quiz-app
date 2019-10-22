@@ -6,110 +6,74 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
    <link rel="stylesheet" type="text/css" href="index.css" />
-   <link href="https://fonts.googleapis.com/css?family=Press+Start+2P|Roboto&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css?family=Press+Start+2P|Roboto:700&display=swap" rel="stylesheet">
    <title>Legend of Zelda: Quiz</title>
 </head>
 
 <body>
-   <div class="page-container">
+   <div class="pagecontainer">
 
       <main>
-         <div class="border background-image">
 
+         <div class="count border">
             <header>
-               <div class="header-container">
+               <div class="headercontainer potCounter">
+                  <br>
                   <h1>Are you Worthy of the Master Sword?</h1>
                </div>
             </header>
+         </div>
 
+         <div class="health border">
             <section>
-               <div class="start-container">
-                  <span>
-                     Test your knowlodge of the Legend of Zelda Series to see if you are worthy of
-                     wielding the Master Sword!
-                  </span>
-                  <label class="answers">
-                     <input class="submit" type="submit" class="startbutton" value="Start" name="startquiz" required>
-                  </label>
-               </div>
-            </section>
-
-            <section>
-               <div class="quiz-container">
-                  <form>
-                     <fieldset>
-                        <legend>Question Goes Here</legend>
-                        <label class="answers">
-                           <input class="radio" type="radio" class="s1" value="answer a" name="answer" required>
-                           <span>
-                              Answer A
-                           </span>
-                        </label>
-                        <label class="answers">
-                           <input class="radio" type="radio" class="s2" value="answer b" name="answer" required>
-                           <span>
-                              Answer B
-                           </span>
-                        </label>
-                        <label class="answers">
-                           <input class="radio" type="radio" class="s3" value="answer c" name="answer" required>
-                           <span>
-                              Answer C
-                           </span>
-                        </label>
-                        <label class="answers">
-                           <input class="radio" type="radio" class="s4" value="answer d" name="answer" required>
-                           <span>
-                              Answer B
-                           </span>
-                        </label>
-                        <input class="submit" type="submit" class="answerbutton" value="Submit" name="pickanswer"
-                           required>
-                     </fieldset>
-                  </form>
-               </div>
-            </section>
-
-            <section>
-               <div class="results-container">
-                  You scored 10/10!
-                  <label class="answers">
-                     <input class="submit" type="submit" class="retrybutton" value="Retry" name="retryquiz">
-                  </label>
+               <div class="heartcontainer">
+                  <img src=images/full.png class='empty'>
+                  <img src=images/full.png class='empty'>
+                  <img src=images/full.png class='empty'>
                </div>
             </section>
          </div>
 
-         <div class="border">
+         <div class="quiz border background-image">
             <section>
-               <div class="score-container">
-                  <span>10/10 Score</span>
-               </div>
+               <div id="quizcontainer">
+                  <div class="startcontainer">
+                     <span>
+                        Test your knowlodge on "The Legend Zelda Series" to see if you are worthy of
+                        wielding the Master Sword!
+                     </span>
+                     <br>
+                     <br>
+                     <button class="press startbutton">Start</button>
+                  </div>
             </section>
          </div>
-
+      
       </main>
 
       <footer>
-         <div class="center1">
+         
+         <div class="centercontainer">
             <div class="border">
-               <ul class="contact-container">
-                  <li><a href="mailto:joshwortiz@gmail.com" target="_top"><img src="https://i.imgur.com/6HY8naV.png"
-                           class="contact-info" alt="Email Icon" /></a></li>
-                  <li><a href="#" target="_blank"><img src="https://i.imgur.com/PJBqvng.png" class="contact-info"
+               <ul class="contactcontainer">
+                  <li><a href="mailto:joshwortiz@gmail.com" target="_top"><img src="images/email.png"
+                           class="contactinfo" alt="Email Icon" /></a></li>
+                  <li><a href="#" target="_blank"><img src="images/webpage.png" class="contactinfo"
                            alt="Website Icon" /></a></li>
                   <li><a href="https://www.linkedin.com/in/joshua-ortiz-188745184/" target="_blank"><img
-                           src="https://i.imgur.com/i32nZnz.png" class="contact-info" alt="LinkedIn Icon" /></a></li>
+                           src="images/linkedin.png" class="contactinfo" alt="LinkedIn Icon" /></a></li>
                </ul>
             </div>
          </div>
+      
       </footer>
 
       <script src="https://code.jquery.com/jquery-3.4.1.js"
          integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
       <script src="STORE.js"></script>
-      <script src="index.js"></script>
+      <script src="script.js"></script>
 
    </div>
 </body>
+
 </html>

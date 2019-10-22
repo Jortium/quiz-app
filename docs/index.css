@@ -3,20 +3,21 @@
 	border: 0;
 	padding: 0;
 	margin: 0;
+	cursor: url('images/cursor.gif'), auto;
 }
 
 html,
 body {
 	width: 100%;
 	height: 100%;
-	font-size: 20px;
 }
 
 body {
-	min-width: 360px;
+	font-size: 20px;
 	font-family: 'Roboto', sans-serif;
+	font-variant: small-caps;
 	background-color: #5A8C58;
-	color: white;
+	color: #F2C46D;
 	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
@@ -30,7 +31,7 @@ footer {
 	flex-shrink: 0;
 }
 
-.page-container {
+.pagecontainer {
 	min-height: 100%;
 	display: flex;
 	flex-direction: column;
@@ -43,8 +44,6 @@ main{
 	display: flex;
 	justify-content:center;
 	flex-direction: column;
-	min-width: 350px;
-	max-width: 500px;
 }
 
 .border{
@@ -56,43 +55,50 @@ main{
 }
 
 .background-image{
-	background-image: url("https://i.imgur.com/MnQAFnU.png");
+	background-image: url("images/shield.png");
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: contain;
 }
 
-.header-container {
+.headercontainer {
 	font-family: 'Press Start 2P', cursive;
 	font-size: 10px;
-	margin: 10px 10px 10px 10px;
+	margin: 5px 10px 10px 10px;
 }
 
-.start-container {
+.heartcontainer{
+	min-height: 35px;
 }
 
-.quiz-container {
+.empty,
+.full{
+	margin: 7px 0px 0px 0px;
+	height:20px;
 }
 
-.answers {
+#quizcontainer{
+	display: flex;	
+	justify-content: center;
+	align-items: center;
+	flex-flow: column;
+	min-width: 300px;
+	min-height: 300px;
+}
+
+.choices
+{
 	display: block;
 }
 
-.score-container {
-}
-
-.results-container {
-	display: block;
-}
-
-.center1{
+.centercontainer{
 	display: flex;
 	justify-content:center;
 	flex-direction: row;
 	margin: 10px 0px 10px 0px;
 }
 
-.contact-container{
+.contactcontainer{
 	display: flex;
 	max-width: 500px;
 	flex-flow: row wrap;
@@ -101,18 +107,32 @@ main{
 	list-style: none;
 }
 
-.contact-info {
+.contactinfo {
 	height: 30px;
 	width: 30px;
-	margin: 0px 40px 0px 40px;
+	margin: 0px 25px 0px 25px;
 }
 
-.submit{	
-	width: 5em;
-	height: 3em;
-	border-width: medium;
-	border-style: outset;
+.press{	
+	font-family: 'Roboto', sans-serif;
+	font-variant: small-caps;
+	font-size: 20px;
+	width: 4em;
+	height: 2em;
+	border: 3px;
+	border-style: outset;	
+	color: #F2C46D;
+	background-color:#E8591A;
 	margin: 5px 0px 5px 0px;
+}
+
+.press:active{
+	border: 3px;
+	border-style: inset;
+}
+
+.press:hover {	
+	background-color:#BD4715;
 }
 
 @media only screen and (min-width: 540px) {}
