@@ -1,94 +1,94 @@
 const STORE = [
-      //Question 1
-      {
-            question: `Who is the Sage of Shadows in Ocarina of Time?`,
+//Question 1
+{
+      question: `Who is the Sage of Shadows in Ocarina of Time?`,
             choices: [
                   `Princess Zelda`,
                   `Saria`,
                   `Darunia`,
                   `Impa`],
-            answer: `Impa`,
+                  answer: `Impa`,
       },
-      //Question 2            
-      {
-            question: `What is the fairies name that follows the Hero in Majora’s Mask?`,
+//Question 2            
+{
+      question: `What is the fairies name that follows the Hero in Majora’s Mask?`,
             choices: [
                   `Tatl`,
                   `Termina`,
                   `Twinmold`,
                   `Tael`],
-            answer: `Tatl`,
+                  answer: `Tatl`,
       },
-      //Question 3            
-      {
-            question: `What is the first Zelda game that the Hero was an adult the whole game?`,
+//Question 3            
+{
+      question: `What is the first Zelda game that the Hero was an adult the whole game?`,
             choices: [
                   `Breath of the Wild`,
                   `Ocarina of Time`,
                   `Twilight Princess`,
                   `Wind Waker`],
-            answer: `Twilight Princess`,
-
+                  answer: `Twilight Princess`,
+            
       },
-      //Question 4            
-      {
-            question: `Finish this quote: “Courage need not be remembered, …”`,
+//Question 4            
+{
+      question: `Finish this quote: “Courage need not be remembered, …”`,
             choices: [
                   `for it is never lost.`,
                   `for it is never forgotten.`,
                   `because it is proven.`,
                   `for it is always there.`],
-            answer: `for it is never forgotten.`,
+                  answer: `for it is never forgotten.`,
       },
-      //Question 5      
-      {
-            question: `The Legend of Zelda(NES) is known for being the first video game that…`,
+//Question 5      
+{
+      question: `The Legend of Zelda(NES) is known for being the first video game that…`,
             choices: [
                   `had music.`,
                   `allowed saving.`,
                   `had color.`,
                   `was released on the NES.`],
-            answer: `allowed saving.`,
+                  answer: `allowed saving.`,
       },
-      //Question 6
-      {
-            question: `Who is the main antagonist a majority of The Legend of Zelda series?`,
+//Question 6
+{
+      question: `Who is the main antagonist a majority of The Legend of Zelda series?`,
             choices: [`Ganon`,
                   `Zant`,
                   `Ghirahim`,
                   `Majora`],
-            answer: `Ganon`,
+                  answer: `Ganon`,
       },
-      //Question 7      
-      {
-            question: `Which of The Legend of Zelda games was the first to not have the usual main villain?`,
+//Question 7      
+{
+      question: `Which of The Legend of Zelda games was the first to not have the usual main villain?`,
             choices: [`Minish Cap`, `Skyward Sword`, `The Legend of Zelda II`, `Majora’ s Mask`],
-            answer: `The Legend of Zelda II`,
+                  answer: `The Legend of Zelda II`,
       },
-      //Question 8
-      {
-            question: `What is the Hero’ s name ?`,
+//Question 8
+{
+      question: `What is the Hero’ s name ?`,
             choices: [
                   `Zelda`,
                   `Link`,
                   `Epona`,
                   `Shiek`
             ],
-            answer: `Link`,
+                  answer: `Link`,
       },
-      //Question 9
-      {
-            question: `How many hearts do you need in Breath of the Wild to get the Master Sword?`,
+//Question 9
+{
+      question: `How many hearts do you need in Breath of the Wild to get the Master Sword?`,
             choices: [`13`, `10`, `20`, `15`],
-            answer: `13`,
+                  answer: `13`,
       },
-      //Question 10                  
-      {
-            question: `Who develops the Legend of Zelda(series)?`,
+//Question 10                  
+{
+      question: `Who develops the Legend of Zelda(series)?`,
             choices: [`Sony`, `Microsoft`, `Sega`, `Nintendo`],
-            answer: `Nintendo`,
+                  answer: `Nintendo`,
       }
-];
+    ];
 
 const OUTCOMES = {
       perfect: {
@@ -194,7 +194,7 @@ function wrongChoice() {
 
 function nextQuestion() {
       $('#quizcontainer').on('click', '.nextButton', function (event) {
-            $('#quizcontainer').empty();
+      $('#quizcontainer').empty();
             updatePotsBroken();
             $('#quizcontainer').append(generateQuestion());
       });
@@ -207,13 +207,13 @@ function updatePotsBroken() {
 
 function generateHearts(number) {
       for (i = 1; i <= number; i++) {
-            $('.heartcontainer').append(`<img src=images/full.png class="fullheart"`);
+            $('.heartcontainer').append(`<img src=images/full.png class='fullheart'>`);
       }
 }
 
 function updateHearts(answer) {
       if (!answer) {
-            $(`.heartcontainer i:nth-child(${brokenPots + 1})`).removeClass("fullheart").prepend(`<img src=images/empty.png class="emptyheart"`);
+            $(`.fullheart:nth-child(${brokenPots + 1})`).attr("src", "images/empty.png");
             hearts--;
       }
 }
