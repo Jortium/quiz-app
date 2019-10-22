@@ -5,7 +5,7 @@ function startQuest() {
       $('#quizcontainer').on('click', '.startbutton', function (event) {
             $('#quizcontainer').empty();
             $('.potCounter').empty();
-            $('.potCounter').html(`<h3><li>Question:<span class ="brokenPots">0</span>/10</li></h3>`);
+            $('.potCounter').html(`<h1><span>Question:<span class ="brokenPots">0</span>/10</span></h1>`);
             $('.brokenPots').text(1);
             $('.heartcontainer').empty();
             generateHearts();
@@ -24,23 +24,23 @@ function generateQuestion() {
 }
 
 function generateQuiz(questionIndex) {
-      let formMaker = $(`<form>
+      let dungeonMaker = $(`<form>
         <fieldset class="choices">
           <legend class="questionText">${STORE[questionIndex].question}</legend><br>
         </fieldset>
       </form>`)
 
-      let fieldSelector = $(formMaker).find('fieldset');
+      let fieldFinder = $(dungeonMaker).find('fieldset');
 
       STORE[questionIndex].choices.forEach(function (choicesValue, choicesIndex) {
             $(`<label class="choices" for="${choicesIndex}">
             <input type="radio" class="select" id="${choicesIndex}" value="${choicesValue}" name="answer" required>
             <span>${choicesValue}</span>
           </label>
-          `).appendTo(fieldSelector);
+          `).appendTo(fieldFinder);
       });
-      $(`<br><button type="submit" class="submitButton press">Submit</button >`).appendTo(fieldSelector);
-      return formMaker;
+      $(`<br><button type="submit" class="submitButton press">Submit</button >`).appendTo(fieldFinder);
+      return dungeonMaker;
 }
 
 function submitChoice() {
@@ -91,7 +91,7 @@ function updatePotsBroken() {
 }
 
 function generateHearts() {
-      if (hearts < 10) {
+      if ($('.full') < hearts) {
             for (i = 1; i <= hearts; i++) {
                   $('.heartcontainer').append(`<img class='full' src="images/full.png">`);
             }
@@ -100,7 +100,7 @@ function generateHearts() {
 
 function updateHearts() {
       hearts--;
-      $('.hearts').slice('.full').append(`<img src = 'images/empty.png'>`);
+      $('.heartcontainer').slice('.full').append(`<img src = 'images/empty.png'>`);
 }
 
 function heartsRemaining() {
@@ -123,7 +123,7 @@ function countHearts() {
 function restartQuest() {
       hearts = 10;
       brokenPots = 0;
-      $('.hearts')
+      generateHearts();
       $('.brokenPots').text(0);
 }
 
