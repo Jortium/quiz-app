@@ -8,7 +8,7 @@ function startQuest() {
             $('.potCounter').html(`<h1><span>Question:<span class ="brokenPots">0</span>/10</span></h1>`);
             $('.brokenPots').text(1);
             $('.heartcontainer').empty();
-            generateHearts();
+            generateHearts(10);
             $('#quizcontainer').append(generateQuestion());
       });
 }
@@ -63,6 +63,7 @@ function correctChoice() {
             <br>
     <button type="button" class="nextButton press">Next</button>`
       )
+      updateHearts(true);
 }
 
 function wrongChoice() {
@@ -74,7 +75,7 @@ function wrongChoice() {
       <br>
       <button type="button" class="nextButton press">Next</button>`
       );
-      updateHearts();
+      updateHearts(false);
 }
 
 function nextQuestion() {
@@ -90,22 +91,23 @@ function updatePotsBroken() {
       $('.brokenPots').text(brokenPots + 1);
 }
 
-function generateHearts() {
-      if ($('.full') < hearts) {
-            for (i = 1; i <= hearts; i++) {
-                  $('.heartcontainer').append(`<img class='full' src="images/full.png">`);
-            }
+function generateHearts(number) {
+      for (i = 1; i <= number; i++) {
+            $('.heartcontainer').append(`<img src=images/full.png class="fullheart"`);
       }
 }
 
-function updateHearts() {
-      hearts--;
-      $('.heartcontainer').slice('.full').append(`<img src = 'images/empty.png'>`);
+function updateHearts(answer) {
+      if (!answer) {
+            $(`.heartcontainer i:nth-child(${brokenPots + 1})`).removeClass("fullheart").prepend(`<img src=images/empty.png class="emptyheart"`);
+            hearts--;
+      }
 }
 
 function heartsRemaining() {
       const questResult = countHearts();
-      return (`<h1>${questResult.message}</h1>`)
+
+      $("#quizcontainer").append(`<h1>${questResult.message}</h1>`);
 }
 
 function countHearts() {
@@ -123,7 +125,7 @@ function countHearts() {
 function restartQuest() {
       hearts = 10;
       brokenPots = 0;
-      generateHearts();
+      generateHearts(3);
       $('.brokenPots').text(0);
 }
 

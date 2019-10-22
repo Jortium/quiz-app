@@ -71,8 +71,8 @@ main{
 	min-height: 35px;
 }
 
-.empty,
-.full{
+.emptyheart,
+.fullheart{
 	margin: 7px 0px 0px 0px;
 	height:20px;
 }
