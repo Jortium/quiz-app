@@ -3,26 +3,13 @@
 	border: 0;
 	padding: 0;
 	margin: 0;
-<<<<<<< HEAD
-=======
 	cursor: url('images/cursor.gif'), auto;
->>>>>>> first-draft
 }
 
 html,
 body {
 	width: 100%;
 	height: 100%;
-<<<<<<< HEAD
-	font-size: 20px;
-
-}
-
-body {
-	min-width: 360px;
-	font-family: 'Roboto', sans-serif;
-
-=======
 }
 
 body {
@@ -32,7 +19,6 @@ body {
 	background-color: #5A8C58;
 	color: #F2C46D;
 	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
->>>>>>> first-draft
 }
 
 main {
@@ -45,19 +31,11 @@ footer {
 	flex-shrink: 0;
 }
 
-<<<<<<< HEAD
-.page-container {
-	min-height: 100%;
-	display: flex;
-	flex-direction: column;
-	align-items: stretch;
-=======
 .pagecontainer {
 	min-height: 100%;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
->>>>>>> first-draft
 	justify-content: center;
 	text-align: center;
 }
@@ -68,62 +46,6 @@ main{
 	flex-direction: column;
 }
 
-<<<<<<< HEAD
-.border-test{
-	margin: 0px 5px 0px 5px;
-	border: medium;
-	border-style: solid;
-}
-
-.header-container {
-	font-family: 'Press Start 2P', cursive;
-	background-color: #CCCCCC;
-}
-
-.start-container {
-	background-color:#B3B3B3;
-}
-
-.quiz-container {
-	background-color:#CCCCCC;
-}
-
-.answers {
-	display: block;
-}
-
-.score-container {
-	background-color:#B3B3B3;
-}
-
-.results-container {
-	background-color:#CCCCCC;
-	display: block;
-}
-
-.contact-container{
-	background-color:#B3B3B3;
-	display: flex;
-	flex-flow: row wrap;
-	justify-content: center;
-	list-style: none;
-}
-
-.contact-info {
-	height: 30px;
-	width: 30px;
-	margin: 0px 40px 0px 40px;
-}
-
-.submit{	
-	width: 5em;
-	height: 3em;
-	border-width: medium;
-	border-style: outset;
-	margin: 5px 0px 5px 0px;
-}
-
-=======
 .border{
 	margin: 10px 5px 10px 5px;
 	border: medium;
@@ -213,13 +135,10 @@ main{
 	background-color:#BD4715;
 }
 
->>>>>>> first-draft
 @media only screen and (min-width: 540px) {}
 
 @media only screen and (min-width: 769px) {
 
-<<<<<<< HEAD
-=======
 	main{
 		display: flex;
 		justify-content:center;
@@ -228,5 +147,4 @@ main{
 		min-height: 770px;
 	}
 
->>>>>>> first-draft
 }
