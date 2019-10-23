@@ -40,21 +40,21 @@ footer {
 	text-align: center;
 }
 
-main{
+main {
 	display: flex;
-	justify-content:center;
+	justify-content: center;
 	flex-direction: column;
 }
 
-.border{
+.border {
 	margin: 10px 5px 10px 5px;
 	border: medium;
 	border-style: solid;
 	border-color: black;
-	background-color:#D9D3B4;
+	background-color: #D9D3B4;
 }
 
-.background-image{
+.background-image {
 	background-image: url("images/shield.png");
 	background-repeat: no-repeat;
 	background-position: center;
@@ -67,38 +67,43 @@ main{
 	margin: 5px 10px 10px 10px;
 }
 
-.heartcontainer{
+.heartcontainer {
 	min-height: 35px;
 }
 
 .emptyheart,
-.fullheart{
-	margin: 7px 0px 0px 0px;
-	height:20px;
+.fullheart {
+	margin: 7px 5px auto 0px;
+	height: 20px;
 }
 
-#quizcontainer{
-	display: flex;	
+#quizcontainer {
+	display: flex;
 	justify-content: center;
 	align-items: center;
 	flex-flow: column;
+	margin: 0px 5px 0px 5px;
 	min-width: 300px;
 	min-height: 300px;
 }
 
-.choices
-{
-	display: block;
+.startcontainer {
+	margin: 0px 10px 0px 10px;
 }
 
-.centercontainer{
+.choices {
+	display: block;
+	margin: 0px 5px 0px 5px;
+}
+
+.centercontainer {
 	display: flex;
-	justify-content:center;
+	justify-content: center;
 	flex-direction: row;
 	margin: 10px 0px 10px 0px;
 }
 
-.contactcontainer{
+.contactcontainer {
 	display: flex;
 	max-width: 500px;
 	flex-flow: row wrap;
@@ -113,38 +118,56 @@ main{
 	margin: 0px 25px 0px 25px;
 }
 
-.press{	
+.press {
 	font-family: 'Roboto', sans-serif;
 	font-variant: small-caps;
 	font-size: 20px;
 	width: 4em;
 	height: 2em;
 	border: 3px;
-	border-style: outset;	
+	border-style: outset;
 	color: #F2C46D;
-	background-color:#E8591A;
+	background-color: #E8591A;
 	margin: 5px 0px 5px 0px;
 }
 
-.press:active{
+.press:active {
 	border: 3px;
 	border-style: inset;
 }
 
-.press:hover {	
-	background-color:#BD4715;
+.press:hover {
+	background-color: #BD4715;
 }
 
-@media only screen and (min-width: 540px) {}
+.MasterSword{
+	width:40px;
+}
+
+.Pixels{
+	width:50px;
+}
+
+@media only screen and (min-width: 540px) {
+
+	main {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	min-width: 770px;
+	max-width: 770px;
+}
+
+}
 
 @media only screen and (min-width: 769px) {
 
-	main{
+	main {
 		display: flex;
-		justify-content:center;
+		justify-content: center;
 		flex-direction: column;
 		min-width: 770px;
-		min-height: 770px;
+		max-width: 770px;
 	}
-
+	
 }
