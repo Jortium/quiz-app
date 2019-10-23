@@ -122,7 +122,7 @@ function startQuest() {
             $('.potCounter').html(`<h1><span>Question:<span class ="brokenPots">0</span>/10</span></h1>`);
             $('.brokenPots').text(1);
             $('.heartcontainer').empty();
-            generateHearts(10);
+            generateHearts(hearts);
             $('#quizcontainer').append(generateQuestion());
       });
 }
@@ -131,7 +131,6 @@ function generateQuestion() {
       if (brokenPots < STORE.length) {
             return generateQuiz(brokenPots);
       } else {
-            $('#quizcontiner').empty();
             heartsRemaining();
             $('.brokenPots').text(10);
       }
@@ -218,12 +217,6 @@ function updateHearts(answer) {
       }
 }
 
-function heartsRemaining() {
-      const questResult = countHearts();
-
-      $("#quizcontainer").append(`<h1>${questResult.message}</h1>`);
-}
-
 function countHearts() {
       if (hearts === 10) {
             return OUTCOMES.perfect;
@@ -236,11 +229,25 @@ function countHearts() {
       }
 }
 
+function heartsRemaining() {
+      const questResult = countHearts();
+      $('#quizcontiner').empty();
+      $("#quizcontainer").append(`<h1>${questResult.message}</h1>
+      <img src=${questResult.endImage} class="ruWorthy">
+      <span>You had ${hearts} remaining.</span>
+      <button type="submit" class="continueButton press">Continue</button>`);
+}
+
 function restartQuest() {
+      $('#quizcontainer').on('click', '.continueButton', function (event) {
+      $('#quizcontainer').empty();
+      $('.heartcontainer').empty();
       hearts = 10;
       brokenPots = 0;
-      generateHearts(3);
-      $('.brokenPots').text(0);
+      generateHearts(hearts);
+      $('.brokenPots').text(0);      
+      $('#quizcontainer').append(generateQuestion());
+      });
 }
 
 function handledrawSword() {
