@@ -157,7 +157,7 @@ function startQuest() {
 function initalizeQuest() {
       $('#quizcontainer').empty();
       $('.potCounter').empty();
-      $('.potCounter').html(
+      $('.potCounter').append(
             `<h1><span>Question:<span class ="brokenPots">0</span>/10</span></h1>`
       );
       $('.brokenPots').text(1);

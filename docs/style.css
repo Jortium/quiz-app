@@ -44,6 +44,7 @@ main {
 	display: flex;
 	justify-content: center;
 	flex-direction: column;
+	max-width: 350px;
 }
 
 .border {
@@ -61,10 +62,10 @@ main {
 	background-size: contain;
 }
 
-.headercontainer {
+.potCounter{
 	font-family: 'Press Start 2P', cursive;
-	font-size: 10px;
-	margin: 5px 10px 10px 10px;
+	font-size: 10px;	
+	margin: 7px 10px 5px 10px;
 }
 
 .heartcontainer {
@@ -149,25 +150,44 @@ main {
 }
 
 @media only screen and (min-width: 540px) {
-
 	main {
 	display: flex;
 	justify-content: center;
 	flex-direction: column;
-	min-width: 770px;
-	max-width: 770px;
+	min-width: 500px;
+	max-width: 500px;
 }
+
+body {
+	font-size: 25px;
+}
+
+.press {
+	width: 5em;
+}
+
+.contactinfo {
+	height: 40px;
+	width: 40px;
+	margin: 0px 40px 0px 40px;
 
 }
 
 @media only screen and (min-width: 769px) {
 
 	main {
-		display: flex;
-		justify-content: center;
-		flex-direction: column;
 		min-width: 770px;
 		max-width: 770px;
 	}
-	
+
+	.potCounter{
+		font-family: 'Press Start 2P', cursive;
+		font-size: 13px;
+	}
+
+	.contactinfo {
+		height: 45px;
+		width: 45px;
+		margin: 0px 40px 0px 40px;
+	}
 }
