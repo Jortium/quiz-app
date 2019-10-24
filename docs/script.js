@@ -265,7 +265,7 @@ function updatePotsBroken() {
 //Fill your hearts up to 10 to begin your quest.
 function generateHearts(number) {
       for (i = 1; i <= number; i++) {
-            $('.heartcontainer').append(`<img src=images/full.png class="fullheart">`);
+            $('.heartcontainer').append(`<img src=images/full.png class="fullheart" alt='A full heart. Question is right on unanswered.'>`);
       }
 }
 
@@ -275,7 +275,7 @@ function updateHearts(answer) {
             $(`.fullheart:nth-child(${brokenPots + 1})`).attr(
                   'src',
                   'images/empty.png'
-            );
+            ).attr('alt', 'An empty heart. You got a question wrong.')
             hearts--;
       }
 }
