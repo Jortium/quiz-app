@@ -85,7 +85,7 @@ main {
 	align-items: center;
 	flex-flow: column;
 	margin: 0px 5px 0px 5px;
-	height: 300px;
+	height: 350px;
 }
 
 .startcontainer {
@@ -122,7 +122,7 @@ main {
 .press {
 	font-family: 'Roboto', sans-serif;
 	font-variant: small-caps;
-	font-size: 20px;
+	font-size: 18px;
 	width: 4em;
 	height: 2em;
 	border: 3px;
