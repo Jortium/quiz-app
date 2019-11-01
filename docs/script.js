@@ -12,7 +12,7 @@ const STORE = [
       },
       //Question 2
       {
-            question: `What is the fairies name that follows the Hero in Majora’s Mask?`,
+            question: `What is the fariy's name that follows the Hero through Majora’s Mask?`,
             choices: [
                   `Tatl`, 
                   `Termina`, 
@@ -23,7 +23,7 @@ const STORE = [
       },
       //Question 3
       {
-            question: `What is the first Zelda game that the Hero was an adult the whole game?`,
+            question: `What is the first Zelda game that the Hero was an adult for the entire game?`,
             choices: [
                   `Breath of the Wild`,
                   `Ocarina of Time`,
@@ -78,7 +78,7 @@ const STORE = [
       },
       //Question 8
       {
-            question: `What is the Hero’ s name ?`,
+            question: `What is the Hero’s name?`,
             choices: [
                   `Zelda`, 
                   `Link`, 
@@ -89,7 +89,7 @@ const STORE = [
       },
       //Question 9
       {
-            question: `How many hearts do you need in Breath of the Wild to get the Master Sword?`,
+            question: `How many hearts do you need in Breath of the Wild to obtain the Master Sword?`,
             choices: [
                   `13`, 
                   `10`, 
@@ -100,7 +100,7 @@ const STORE = [
       },
       //Question 10
       {
-            question: `Who develops the Legend of Zelda(series)?`,
+            question: `Who develops "The Legend of Zelda" series?`,
             choices: [
                   `Sony`, 
                   `Microsoft`, 
@@ -120,14 +120,14 @@ const OUTCOMES = {
       },
 
       great: {
-            message: `You are worthy of holding the Master Sword but it isn't at it's full potential.`,
+            message: `You are worthy of holding the Master Sword! The sword seems to have a untapped potential though.`,
             endImage: `images/mastersword.png`,
             altImage: `The Master Sword`,
             namingClass: `MasterSword`
       },
 
       good: {
-            message: `You have drawn the Master Sword but it's damaged.  Return it to the pedastal and try again.`,
+            message: `You have drawn the Master Sword but it's damaged.  Return the blade to it's pedastal and try again.`,
             endImage: `images/rustedmastersword.png`,
             altImage: `Rusted and damaged Master Sword`,
             namingClass: `MasterSword`
