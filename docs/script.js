@@ -67,7 +67,7 @@ const STORE = [
       },
       //Question 7
       {
-            question: `Which of Zelda game was the first to not have the main antagonist?`,
+            question: `Which Zelda game was the first to not have the usual main antagonist?`,
             choices: [
                   `Minish Cap`,
                   `Skyward Sword`,
