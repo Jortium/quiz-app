@@ -23,7 +23,7 @@ const STORE = [
       },
       //Question 3
       {
-            question: `What is the first Zelda game that the Hero was an adult for the entire game?`,
+            question: `What is the first Zelda game in which the Hero was an adult for the entire game?`,
             choices: [
                   `Breath of the Wild`,
                   `Ocarina of Time`,
@@ -67,7 +67,7 @@ const STORE = [
       },
       //Question 7
       {
-            question: `Which of The Legend of Zelda games was the first to not have the usual main villain?`,
+            question: `Which of Zelda game was the first to not have the main antagonist?`,
             choices: [
                   `Minish Cap`,
                   `Skyward Sword`,
@@ -89,7 +89,7 @@ const STORE = [
       },
       //Question 9
       {
-            question: `How many hearts do you need in Breath of the Wild to obtain the Master Sword?`,
+            question: `How many hearts do you require in Breath of the Wild to obtain the Master Sword?`,
             choices: [
                   `13`, 
                   `10`, 
@@ -120,14 +120,14 @@ const OUTCOMES = {
       },
 
       great: {
-            message: `You are worthy of holding the Master Sword! The sword seems to have a untapped potential though.`,
+            message: `You are worthy of holding the Master Sword! The sword seems to have an untapped potential though.`,
             endImage: `images/mastersword.png`,
             altImage: `The Master Sword`,
             namingClass: `MasterSword`
       },
 
       good: {
-            message: `You have drawn the Master Sword but it's damaged.  Return the blade to it's pedastal and try again.`,
+            message: `You have drawn the Master Sword but it's damaged.  Return the blade to it's pedestal and try again.`,
             endImage: `images/rustedmastersword.png`,
             altImage: `Rusted and damaged Master Sword`,
             namingClass: `MasterSword`
@@ -299,7 +299,7 @@ function heartsRemaining() {
       $('#quizcontiner').empty();
       $('#quizcontainer').append(`<h3>${questResult.message}</h3>
       <img src=${questResult.endImage} class=${questResult.namingClass} alt=${questResult.altImage}>
-      <span>You had ${hearts} health remaining.</span>
+      <span>You have ${hearts} health remaining.</span>
       <button type="submit" class="continueButton press">Continue</button>`);
 }
 
